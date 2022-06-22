@@ -1,0 +1,11 @@
+{{>layouts/header}}
+    {{#article}}
+        <input type="text" readonly value="{{title}}" class="form-control">
+        <textarea readonly cols="30" rows="10" class="form-control">{{content}}</textarea>
+
+        <a href="/articles/{{id}}/edit" class="btn btn-outline-success">글 수정</a>
+        <a href="/articles/{{id}}/delete" class="btn btn-outline-success">글 삭제</a>
+
+
+    {{/article}}
+{{>layouts/footer}}
