@@ -1,0 +1,47 @@
+<div class="card" id="comments-new">
+    <div class="card-body">
+        <form>
+            <div class="mb-3">
+                <label class="form-label">닉네임</label>
+                <input class="form-control form-control-sm" id="new-comment-nickname">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">댓글 내용</label>
+                <textarea class="form-control form-control-sm" rows="3" id="new-comment-body"></textarea>
+            </div>
+            {{#article}}
+                <input type="hidden" value="{{id}}" id="new-comment-id">
+            {{/article}}
+            <button type="button" class="btn btn-outline-success" id="comment-create-btn">댓글 작성</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    {
+      const commentCreateBtn = document.querySelector("#comment-create-btn");
+
+      commentCreateBtn.addEventListener("click", function(){
+        const comment = {
+            nickname: document.querySelector("#new-comment-nickname").value,
+            body: document.querySelector("#new-comment-body").value,
+            articleId: document.querySelector("#new-comment-id").value
+        };
+        console.log(comment);
+
+        const url = "/api/articles/" + comment.articleId + "/comments";
+        fetch(url, {
+            method: "post",
+            body: JSON.stringify(comment),
+            headers: {
+                "Content-Type": "application/json"
+            }
+        }).then(response =>{
+            const msg = (response.ok) ? "댓글이 등록 되었습니다." : "댓글 등록 실패..!";
+            alert(msg);
+            location.reload();
+        });
+
+      });
+    }
+</script>
