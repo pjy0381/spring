@@ -1,8 +1,10 @@
 package com.example.firstProject.controller;
 
 import com.example.firstProject.dto.ArticleForm;
+import com.example.firstProject.dto.CommentDto;
 import com.example.firstProject.entity.Article;
 import com.example.firstProject.repository.ArticleRepository;
+import com.example.firstProject.service.CommentService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -19,6 +21,8 @@ public class ArticleController {
 
     @Autowired
     private ArticleRepository articleRepository;
+    @Autowired
+    private CommentService commentService;
 
     @GetMapping("/articles/new")
     public String viewArtilce(){
@@ -43,8 +47,10 @@ public class ArticleController {
     @GetMapping("/articles/{id}")
     public String show(@PathVariable Long id, Model model){
         Article article = articleRepository.findById(id).orElse(null);
+        List<CommentDto> commentDtos = commentService.comments(id);
 
         model.addAttribute("article",article);
+        model.addAttribute("commentDtos", commentDtos);
 
         return "/articles/show";
     }

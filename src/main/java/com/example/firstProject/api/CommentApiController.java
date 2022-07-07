@@ -19,7 +19,7 @@ public class CommentApiController {
 
     @GetMapping("/api/articles/{articleId}/comments")
     public ResponseEntity<List<CommentDto>> comments(@PathVariable Long articleId){
-        List<CommentDto> dtos = commentService.commnets(articleId);
+        List<CommentDto> dtos = commentService.comments(articleId);
         return ResponseEntity.status(HttpStatus.OK).body(dtos);
     }
 

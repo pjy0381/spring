@@ -22,7 +22,7 @@ public class CommentService {
     @Autowired
     private ArticleRepository articleRepository;
 
-    public List<CommentDto> commnets(Long articleId) {
+    public List<CommentDto> comments(Long articleId) {
 
 //        List<Comment> comments = commentRepository.findByArticleId(articleId);
 
@@ -69,4 +69,5 @@ public class CommentService {
 
         return CommentDto.createCommentDto(target);
     }
+
 }
