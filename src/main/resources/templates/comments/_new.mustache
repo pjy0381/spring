@@ -29,7 +29,7 @@
         };
         console.log(comment);
 
-        const url = "/api/articles/" + comment.articleId + "/comments";
+        const url = "/api/comments/" + comment.articleId + "/comments";
         fetch(url, {
             method: "post",
             body: JSON.stringify(comment),
