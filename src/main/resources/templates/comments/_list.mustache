@@ -43,8 +43,7 @@
                         </div>
                     </div>
                 </div>
-                <button type="button" class="btn btn-sm btn-outline-danger comment-delete-btn"
-                data-comment-id="{{id}}">삭제</button>
+
             </div>
 
             <div class="card-body">{{body}}</div>
@@ -97,33 +96,5 @@
         });
 
       });
-    }
-<!--    댓글 삭제-->
-    {
-    const commentDeleteBtns = document.querySelectorAll(".comment-delete-btn");
-
-     commentDeleteBtns.forEach(btn => {
-        btn.addEventListener("click", function(event){
-            const commentDeleteBtn = event.srcElement;
-            const commentId = commentDeleteBtn.getAttribute("data-comment-id");
-            const url = `/api/comments/${commentId}/comments`;
-
-            if(confirm("삭제하시겠습니까?")){
-            fetch(url, {
-                method: "DELETE"
-            }).then(response =>{
-                if(!response.ok){
-                    alert("댓글 삭제 실패!");
-                    return;
-                }
-
-                const target = document.querySelector(`#comments-${commentId}`);
-                target.remove();
-            });
-            }
-
-        });
-
-       });
     }
 </script>
