@@ -1,0 +1,83 @@
+[33mcommit d09a8de54ae10637814c2e017ae74c8f4fc19db9[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/pjy0381[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: pjy0381 <jo101044@naver.com>
+Date:   Wed Jul 13 17:31:15 2022 +0900
+
+    postgresql 연동
+
+[33mcommit 5b4aa300e3716fda08399f0cbdc1fcb690111a73[m
+Author: pjy0381 <jo101044@naver.com>
+Date:   Mon Jul 11 20:23:37 2022 +0900
+
+    댓글 삭제기능 추가
+
+[33mcommit 7e34c14b49efcb89b0cc782ff770cc444bd53ef6[m
+Author: pjy0381 <jo101044@naver.com>
+Date:   Sat Jul 9 23:15:24 2022 +0900
+
+    댓글 수정기능 추가
+
+[33mcommit 55caecad8cbb23b338701385e6cea0b1b6ab94cb[m
+Author: pjy0381 <jo101044@naver.com>
+Date:   Fri Jul 8 02:33:29 2022 +0900
+
+    댓글 등록 추가
+
+[33mcommit be6ef0ed069d2603b557aa86d3effe989b361911[m
+Author: pjy0381 <jo101044@naver.com>
+Date:   Fri Jul 8 01:55:52 2022 +0900
+
+    댓글 뷰페이지
+
+[33mcommit 6ea2492b9c40752abe6fc61a6d5d0549677762e8[m
+Author: pjy0381 <jo101044@naver.com>
+Date:   Tue Jul 5 23:27:48 2022 +0900
+
+    댓글 RestController 추가
+
+[33mcommit e0103fa704b4b7ca7273bf74dd7e0d87452f146e[m
+Author: pjy0381 <jo101044@naver.com>
+Date:   Mon Jul 4 23:39:07 2022 +0900
+
+    댓글 테이블 생성과 테스트
+
+[33mcommit fca910dc8fe870aeff64e5e26bd0777448f70c03[m
+Author: pjy0381 <jo101044@naver.com>
+Date:   Fri Jul 1 22:55:31 2022 +0900
+
+    Test 코드 작성
+
+[33mcommit 9c7a91a1ca5affe76dd9053ea61ba68a831b39f3[m
+Author: pjy0381 <jo101044@naver.com>
+Date:   Wed Jun 29 12:48:36 2022 +0900
+
+    api 리펙토링, trasaction Test
+
+[33mcommit b6f543985925e7438e34058c80e298a11d9e7d3d[m
+Author: pjy0381 <jo101044@naver.com>
+Date:   Mon Jun 27 13:05:43 2022 +0900
+
+    api예제2
+
+[33mcommit aedb72f0c8561c4392c3729ec4f4c2335c27b832[m
+Author: pjy0381 <jo101044@naver.com>
+Date:   Mon Jun 27 13:04:35 2022 +0900
+
+    api예제
+
+[33mcommit 18e2f05b239ceafdb3768811ff5f19350bae3fa5[m
+Author: pjy0381 <jo101044@naver.com>
+Date:   Thu Jun 23 14:43:56 2022 +0900
+
+    gradle 수정
+
+[33mcommit 8a51a907489370bd621d90ae94076158bfa6fb64[m
+Author: pjy0381 <jo101044@naver.com>
+Date:   Thu Jun 23 14:25:48 2022 +0900
+
+    테스트
+
+[33mcommit 284a2288ca5b8ee27db9ad72b08e7a8010bc77a8[m
+Author: pjy0381 <jo101044@naver.com>
+Date:   Thu Jun 23 00:15:15 2022 +0900
+
+    spring 게시판1
